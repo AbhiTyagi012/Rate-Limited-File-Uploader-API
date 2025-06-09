@@ -4,8 +4,8 @@
   "description": "Backend server for appointment booking system",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
+    "start": "node App.js",
+    "dev": "nodemon App.js",
     "lint": "npx eslint .",
     "format": "npx prettier --write ."
   },
