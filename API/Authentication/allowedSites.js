@@ -1,5 +1,5 @@
 const myWebsite = {
-    url: ["http://localhost:5173"], 
+    url: ["https://appointment-booking-system-five.vercel.app"], 
 };
 
 module.exports = myWebsite;
