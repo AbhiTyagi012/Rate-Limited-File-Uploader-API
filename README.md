@@ -43,7 +43,7 @@ A lightweight REST API built with **Node.js** and **Express** that accepts `.txt
 ## Project Structure
 
 ```
-appointment_booking_system/
+Rate-Limited-File-Uploader-API/
 ├── App.js                            # Entry point — Express setup, Swagger mount
 ├── package.json
 ├── .env
@@ -72,8 +72,8 @@ appointment_booking_system/
 ### Install & run
 
 ```bash
-git clone <repo-url>
-cd appointment_booking_system
+after clonning the repo
+cd Rate-Limited-File-Uploader-API
 npm install
 
 # Development (auto-reload)
