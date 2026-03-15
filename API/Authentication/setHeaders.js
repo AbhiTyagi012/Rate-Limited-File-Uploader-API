@@ -3,7 +3,7 @@ function setHeaders(req, res, next) {
       "Content-Security-Policy",
       "default-src: 'self'; object-src: 'none'; script-src: 'self'; style-src: 'self'; img-src: 'self'; connect-src: 'self'; media-src: 'none'; frames-src: 'none'; sandbox allow-same-origin; child-src: 'none'; form-action: 'self'; base-uri: 'self'"
     );
-    res.setHeader("Access-Control-Allow-Origin", "https://appointment-booking-system-five.vercel.app");
+    res.setHeader("Access-Control-Allow-Origin", "");
     res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
     res.setHeader("Access-Control-Allow-Headers", "Origin, Content-Type, X-Auth-Token");
     res.setHeader("Access-Control-Allow-Credentials", true);

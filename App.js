@@ -1,34 +1,29 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const cors = require("cors");
+const swaggerUi = require("swagger-ui-express");
+const createSwaggerSpec = require("./API/config/swagger");
 require("dotenv").config();
+
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
-// MongoDB Connection
-mongoose
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
-  .then(() => console.log("MongoDB connected"))
-  .catch((err) => console.error("MongoDB connection error:", err));
+// Swagger UI — server URL is built from the actual PORT so "Try it out" works
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(createSwaggerSpec(PORT)));
 
-// Import Routes
-const bookingRoutes = require("./API/Routes/App_routes");
-app.use("/api", bookingRoutes);
+// API Routes
+const routes = require("./API/Routes/App_routes");
+app.use("/api", routes);
 
-// Home Route
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to the Appointment Booking API" });
+// Health check
+app.get("/", (_req, res) => {
+  res.json({ message: "Rate Limited File Uploader API", docs: "/api-docs" });
 });
 
-// Server Listen
-const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Swagger docs  → http://localhost:${PORT}/api-docs`);
 });

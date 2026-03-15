@@ -1,25 +1,20 @@
 {
-  "name": "appointment-booking-backend",
+  "name": "rate-limited-file-uploader-api",
   "version": "1.0.0",
-  "description": "Backend server for appointment booking system",
-  "main": "app.js",
+  "description": "A rate-limited file upload REST API that processes .txt and .csv files",
+  "main": "App.js",
   "scripts": {
     "start": "node App.js",
-    "dev": "nodemon App.js",
-    "lint": "npx eslint .",
-    "format": "npx prettier --write ."
+    "dev": "nodemon App.js"
   },
-  "keywords": [],
-  "author": "Your Name",
   "license": "MIT",
   "dependencies": {
-    "axios": "^1.9.0",
-    "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.2.0"
+    "multer": "^2.1.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"

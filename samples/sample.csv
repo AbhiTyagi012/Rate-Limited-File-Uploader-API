@@ -1,0 +1,11 @@
+id,name,email,department,salary
+1,Alice Smith,alice@acme.com,Engineering,95000
+2,Bob Johnson,bob@acme.com,Marketing,72000
+3,Carol White,carol@acme.com,Engineering,105000
+4,David Brown,david@acme.com,Design,80000
+5,Eva Green,eva@acme.com,Product,91000
+6,Frank Miller,frank@acme.com,Engineering,98000
+7,Grace Lee,grace@acme.com,HR,68000
+8,Henry Wilson,henry@acme.com,Marketing,75000
+9,Iris Taylor,iris@acme.com,Design,83000
+10,Jack Anderson,jack@acme.com,Product,89000

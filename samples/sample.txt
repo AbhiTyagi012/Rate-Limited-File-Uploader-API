@@ -1,0 +1,11 @@
+The quick brown fox jumps over the lazy dog.
+This is a sample plain-text file for testing the Rate Limited File Uploader API.
+
+Node.js is an open-source, cross-platform JavaScript runtime environment.
+Express is a minimal and flexible Node.js web application framework.
+Multer is a middleware for handling multipart/form-data, primarily used for file uploads.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
